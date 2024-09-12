@@ -16,5 +16,3 @@ def jogar():
     print(result)
 
 jogar()
-
-# testando
