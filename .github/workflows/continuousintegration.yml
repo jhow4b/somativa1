@@ -44,14 +44,12 @@ jobs:
             push: false
             tags: user/app:latest
 
-    discord:
+    discord-notifier:
+      enviroment: secrets
       runs-on: ubuntu-latest
       steps:
-
         - uses: actions/checkout@v4
-        - name: Run Discord Webhook
-          uses: Sniddl/discord-commits@v1.6
+        - name: Discord Notification
+          uses: tenzin1308/discord-notification@v1.0.0
           with:
-            webhook: ${{ secrets.DISCORD_WEBHOOK }}
-            template: "avatar-with-link"
-            include-extras: true
+            discord-webhook-url: ${{ secrets.DISCORD_WEBHOOK }}
