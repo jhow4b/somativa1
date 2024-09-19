@@ -3,7 +3,7 @@ def jogar():
     print("1- Atacar")
     print("2- Bolsa de itens")
     print("3- Fugir")
-    escolha = int(input("Qual a sua escolha? "))
+    escolha = int(input("Qual a sua escolha meu camarada? "))
     match escolha:
         case 1:
             result = "Atacou"
