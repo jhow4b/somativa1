@@ -59,5 +59,3 @@ class TestJogar(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-#mais um teste
